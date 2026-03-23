@@ -1,0 +1,3159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FutureConnect - Leading provider of electronic security and automation systems in Bangalore since 2010."
+    />
+    <meta
+      name="keywords"
+      content="CCTV, Fire Alarm, Security Systems, Automation, Bangalore"
+    />
+    <meta name="author" content="FutureConnect" />
+    <title>FutureConnect | Electronic Security & Automation Systems</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/fluency/48/shield.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <style>
+      /* ===== CSS VARIABLES ===== */
+      :root {
+        /* Primary Colors */
+        --primary: #1e40af;
+        --primary-light: #3b82f6;
+        --primary-dark: #1e3a8a;
+        --primary-gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+
+        /* Secondary Colors */
+        --secondary: #f97316;
+        --secondary-light: #fb923c;
+        --secondary-dark: #ea580c;
+
+        /* Neutral Colors */
+        --white: #ffffff;
+        --gray-50: #f8fafc;
+        --gray-100: #f1f5f9;
+        --gray-200: #e2e8f0;
+        --gray-300: #cbd5e1;
+        --gray-400: #94a3b8;
+        --gray-500: #64748b;
+        --gray-600: #475569;
+        --gray-700: #334155;
+        --gray-800: #1e293b;
+        --gray-900: #0f172a;
+
+        /* Accent Colors */
+        --success: #10b981;
+        --warning: #f59e0b;
+        --danger: #ef4444;
+        --info: #06b6d4;
+
+        /* Typography */
+        --font-primary: "Plus Jakarta Sans", sans-serif;
+        --font-secondary: "Inter", sans-serif;
+
+        /* Spacing */
+        --section-padding: 100px 0;
+        --container-width: 1200px;
+
+        /* Shadows */
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+        /* Border Radius */
+        --radius-sm: 4px;
+        --radius-md: 8px;
+        --radius-lg: 12px;
+        --radius-xl: 16px;
+        --radius-2xl: 24px;
+        --radius-full: 9999px;
+
+        /* Transitions */
+        --transition-fast: 0.15s ease;
+        --transition-normal: 0.3s ease;
+        --transition-slow: 0.5s ease;
+      }
+
+      /* ===== RESET & BASE STYLES ===== */
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--font-secondary);
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--gray-700);
+        background-color: var(--white);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-primary);
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--gray-900);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: var(--transition-normal);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+
+      input,
+      textarea,
+      select {
+        font-family: inherit;
+        font-size: inherit;
+      }
+
+      /* ===== UTILITY CLASSES ===== */
+      .container {
+        max-width: var(--container-width);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .section {
+        padding: var(--section-padding);
+      }
+
+      .section-gray {
+        background-color: var(--gray-50);
+      }
+
+      .section-dark {
+        background-color: var(--gray-900);
+        color: var(--white);
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-primary {
+        color: var(--primary);
+      }
+
+      .text-secondary {
+        color: var(--secondary);
+      }
+
+      /* ===== SECTION HEADER ===== */
+      .section-header {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 60px;
+      }
+
+      .section-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: linear-gradient(
+          135deg,
+          rgba(30, 64, 175, 0.1) 0%,
+          rgba(59, 130, 246, 0.1) 100%
+        );
+        border: 1px solid rgba(30, 64, 175, 0.2);
+        border-radius: var(--radius-full);
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+      }
+
+      .section-badge i {
+        font-size: 0.75rem;
+      }
+
+      .section-title {
+        font-size: 2.75rem;
+        font-weight: 800;
+        margin-bottom: 16px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-title span {
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .section-subtitle {
+        font-size: 1.125rem;
+        color: var(--gray-500);
+        line-height: 1.7;
+      }
+
+      /* ===== BUTTONS ===== */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 32px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        border-radius: var(--radius-lg);
+        transition: var(--transition-normal);
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        background: var(--primary-gradient);
+        color: var(--white);
+        box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(30, 64, 175, 0.45);
+      }
+
+      .btn-secondary {
+        background: var(--white);
+        color: var(--gray-800);
+        border: 2px solid var(--gray-200);
+      }
+
+      .btn-secondary:hover {
+        background: var(--gray-50);
+        border-color: var(--primary);
+        color: var(--primary);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--white);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .btn-outline:hover {
+        background: var(--white);
+        color: var(--primary);
+        border-color: var(--white);
+      }
+
+      .btn-white {
+        background: var(--white);
+        color: var(--primary);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .btn-white:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-xl);
+      }
+
+      .btn i {
+        font-size: 0.85rem;
+        transition: transform var(--transition-normal);
+      }
+
+      .btn:hover i {
+        transform: translateX(4px);
+      }
+
+      /* ===== PRELOADER ===== */
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        transition:
+          opacity 0.5s ease,
+          visibility 0.5s ease;
+      }
+
+      .preloader.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .preloader-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 30px;
+      }
+
+      .preloader-logo-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--primary-gradient);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.5rem;
+      }
+
+      .preloader-logo-text {
+        font-family: var(--font-primary);
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--gray-900);
+      }
+
+      .preloader-logo-text span {
+        color: var(--primary);
+      }
+
+      .preloader-bar {
+        width: 200px;
+        height: 4px;
+        background: var(--gray-200);
+        border-radius: var(--radius-full);
+        overflow: hidden;
+      }
+
+      .preloader-progress {
+        width: 0%;
+        height: 100%;
+        background: var(--primary-gradient);
+        border-radius: var(--radius-full);
+        animation: loading 1.5s ease-in-out forwards;
+      }
+
+      @keyframes loading {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      /* ===== HEADER & NAVIGATION ===== */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 16px 0;
+        transition: var(--transition-normal);
+      }
+
+      .header.scrolled {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow-md);
+        padding: 12px 0;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* Logo */
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        z-index: 1001;
+      }
+
+      .logo-icon {
+        width: 46px;
+        height: 46px;
+        background: var(--primary-gradient);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.3rem;
+        transition: var(--transition-normal);
+      }
+
+      .logo:hover .logo-icon {
+        transform: rotate(-5deg) scale(1.05);
+      }
+
+      .logo-text {
+        font-family: var(--font-primary);
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+
+      .logo-text .future {
+        color: var(--gray-900);
+      }
+
+      .logo-text .connect {
+        color: var(--primary);
+      }
+
+      .header.scrolled .logo-text .future {
+        color: var(--gray-900);
+      }
+
+      /* Navigation */
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+      }
+
+      .nav-link {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: var(--gray-700);
+        padding: 8px 0;
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--primary);
+        transition: var(--transition-normal);
+      }
+
+      .nav-link:hover {
+        color: var(--primary);
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
+
+      .nav-link.active {
+        color: var(--primary);
+      }
+
+      .nav-cta {
+        padding: 12px 24px;
+        background: var(--primary-gradient);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.9rem;
+        border-radius: var(--radius-lg);
+        transition: var(--transition-normal);
+      }
+
+      .nav-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(30, 64, 175, 0.35);
+      }
+
+      /* Mobile Menu Toggle */
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 8px;
+        z-index: 1001;
+      }
+
+      .menu-toggle span {
+        width: 24px;
+        height: 2.5px;
+        background: var(--gray-800);
+        border-radius: 2px;
+        transition: var(--transition-normal);
+      }
+
+      .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+
+      .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+
+      /* ===== HERO SECTION ===== */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(
+          135deg,
+          var(--gray-50) 0%,
+          var(--white) 100%
+        );
+        overflow: hidden;
+        padding-top: 80px;
+      }
+
+      .hero-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100%;
+        background: var(--primary-gradient);
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        z-index: 1;
+      }
+
+      .hero-pattern {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100%;
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          rgba(255, 255, 255, 0.15) 1px,
+          transparent 0
+        );
+        background-size: 30px 30px;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        z-index: 2;
+      }
+
+      .hero-container {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .hero-content {
+        padding-right: 40px;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: var(--white);
+        border: 1px solid var(--gray-200);
+        border-radius: var(--radius-full);
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--gray-600);
+        margin-bottom: 24px;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .hero-badge i {
+        color: var(--success);
+      }
+
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.15;
+        margin-bottom: 24px;
+        letter-spacing: -1px;
+      }
+
+      .hero-title span {
+        display: block;
+      }
+
+      .hero-title .highlight {
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-description {
+        font-size: 1.125rem;
+        color: var(--gray-600);
+        margin-bottom: 32px;
+        line-height: 1.8;
+        max-width: 520px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 48px;
+      }
+
+      .hero-stats {
+        display: flex;
+        gap: 48px;
+      }
+
+      .hero-stat {
+        position: relative;
+      }
+
+      .hero-stat::after {
+        content: "";
+        position: absolute;
+        right: -24px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 40px;
+        background: var(--gray-200);
+      }
+
+      .hero-stat:last-child::after {
+        display: none;
+      }
+
+      .hero-stat-number {
+        font-family: var(--font-primary);
+        font-size: 2.25rem;
+        font-weight: 800;
+        color: var(--primary);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+
+      .hero-stat-label {
+        font-size: 0.9rem;
+        color: var(--gray-500);
+      }
+
+      /* Hero Image */
+      .hero-visual {
+        position: relative;
+        padding: 40px;
+      }
+
+      .hero-image-wrapper {
+        position: relative;
+      }
+
+      .hero-image {
+        width: 100%;
+        max-width: 550px;
+        border-radius: var(--radius-2xl);
+        box-shadow: var(--shadow-2xl);
+      }
+
+      .hero-floating-card {
+        position: absolute;
+        background: var(--white);
+        border-radius: var(--radius-xl);
+        padding: 20px;
+        box-shadow: var(--shadow-xl);
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        animation: float 4s ease-in-out infinite;
+      }
+
+      .hero-floating-card-1 {
+        top: 10%;
+        left: -30px;
+        animation-delay: 0s;
+      }
+
+      .hero-floating-card-2 {
+        bottom: 25%;
+        right: -30px;
+        animation-delay: -1s;
+      }
+
+      .hero-floating-card-3 {
+        bottom: 5%;
+        left: 10%;
+        animation-delay: -2s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      .floating-card-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+      }
+
+      .floating-card-icon.blue {
+        background: rgba(30, 64, 175, 0.1);
+        color: var(--primary);
+      }
+
+      .floating-card-icon.orange {
+        background: rgba(249, 115, 22, 0.1);
+        color: var(--secondary);
+      }
+
+      .floating-card-icon.green {
+        background: rgba(16, 185, 129, 0.1);
+        color: var(--success);
+      }
+
+      .floating-card-content h4 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+
+      .floating-card-content p {
+        font-size: 0.8rem;
+        color: var(--gray-500);
+      }
+
+      /* ===== TRUSTED BY SECTION ===== */
+      .trusted-by {
+        padding: 60px 0;
+        background: var(--white);
+        border-top: 1px solid var(--gray-100);
+        border-bottom: 1px solid var(--gray-100);
+      }
+
+      .trusted-by-title {
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--gray-400);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+
+      .trusted-logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+      }
+
+      .trusted-logo {
+        height: 40px;
+        opacity: 0.5;
+        filter: grayscale(100%);
+        transition: var(--transition-normal);
+      }
+
+      .trusted-logo:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+      }
+
+      /* ===== ABOUT SECTION ===== */
+      .about {
+        background: var(--white);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+
+      .about-images {
+        position: relative;
+      }
+
+      .about-image-main {
+        width: 100%;
+        border-radius: var(--radius-2xl);
+        box-shadow: var(--shadow-xl);
+      }
+
+      .about-image-secondary {
+        position: absolute;
+        width: 55%;
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-xl);
+        border: 6px solid var(--white);
+        bottom: -40px;
+        right: -40px;
+      }
+
+      .about-experience-card {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        background: var(--primary-gradient);
+        color: var(--white);
+        padding: 28px;
+        border-radius: var(--radius-xl);
+        text-align: center;
+        box-shadow: var(--shadow-xl);
+      }
+
+      .about-experience-number {
+        font-family: var(--font-primary);
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+
+      .about-experience-text {
+        font-size: 0.85rem;
+        font-weight: 500;
+        opacity: 0.9;
+      }
+
+      .about-content {
+        padding-left: 20px;
+      }
+
+      .about-text {
+        font-size: 1.1rem;
+        color: var(--gray-600);
+        margin-bottom: 24px;
+        line-height: 1.8;
+      }
+
+      .about-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 40px;
+      }
+
+      .about-feature {
+        display: flex;
+        gap: 16px;
+      }
+
+      .about-feature-icon {
+        width: 52px;
+        height: 52px;
+        background: rgba(30, 64, 175, 0.08);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .about-feature-icon i {
+        font-size: 1.25rem;
+        color: var(--primary);
+      }
+
+      .about-feature-content h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .about-feature-content p {
+        font-size: 0.9rem;
+        color: var(--gray-500);
+      }
+
+      /* ===== PRODUCTS SECTION ===== */
+      .products {
+        background: var(--gray-50);
+      }
+
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .product-card {
+        background: var(--white);
+        border-radius: var(--radius-xl);
+        padding: 32px 28px;
+        text-align: center;
+        border: 1px solid var(--gray-100);
+        transition: var(--transition-normal);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .product-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--primary-gradient);
+        transform: scaleX(0);
+        transition: var(--transition-normal);
+      }
+
+      .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-xl);
+        border-color: transparent;
+      }
+
+      .product-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .product-icon {
+        width: 80px;
+        height: 80px;
+        background: var(--primary-gradient);
+        border-radius: var(--radius-xl);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 24px;
+        transition: var(--transition-normal);
+      }
+
+      .product-icon i {
+        font-size: 2rem;
+        color: var(--white);
+      }
+
+      .product-card:hover .product-icon {
+        transform: scale(1.1) rotate(5deg);
+      }
+
+      .product-card h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .product-card p {
+        font-size: 0.9rem;
+        color: var(--gray-500);
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .product-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--primary);
+      }
+
+      .product-link i {
+        font-size: 0.75rem;
+        transition: transform var(--transition-normal);
+      }
+
+      .product-link:hover i {
+        transform: translateX(4px);
+      }
+
+      /* ===== SERVICES SECTION ===== */
+      .services {
+        background: var(--white);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .service-card {
+        background: var(--gray-50);
+        border-radius: var(--radius-xl);
+        padding: 40px 32px;
+        transition: var(--transition-normal);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .service-card:hover {
+        background: var(--white);
+        box-shadow: var(--shadow-xl);
+        transform: translateY(-5px);
+      }
+
+      .service-number {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        font-family: var(--font-primary);
+        font-size: 4rem;
+        font-weight: 800;
+        color: rgba(30, 64, 175, 0.05);
+        line-height: 1;
+      }
+
+      .service-icon {
+        width: 65px;
+        height: 65px;
+        background: var(--primary-gradient);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+
+      .service-icon i {
+        font-size: 1.5rem;
+        color: var(--white);
+      }
+
+      .service-card h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .service-card p {
+        color: var(--gray-500);
+        line-height: 1.7;
+      }
+
+      /* ===== WHY CHOOSE US SECTION ===== */
+      .why-us {
+        background: var(--gray-900);
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .why-us-bg-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          rgba(255, 255, 255, 0.03) 1px,
+          transparent 0
+        );
+        background-size: 40px 40px;
+      }
+
+      .why-us .section-header {
+        position: relative;
+        z-index: 1;
+      }
+
+      .why-us .section-badge {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: var(--white);
+      }
+
+      .why-us .section-title {
+        color: var(--white);
+      }
+
+      .why-us .section-subtitle {
+        color: var(--gray-400);
+      }
+
+      .why-us-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .why-us-card {
+        text-align: center;
+        padding: 40px 24px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: var(--radius-xl);
+        transition: var(--transition-normal);
+      }
+
+      .why-us-card:hover {
+        background: rgba(255, 255, 255, 0.06);
+        transform: translateY(-5px);
+      }
+
+      .why-us-icon {
+        width: 70px;
+        height: 70px;
+        background: var(--primary-gradient);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 24px;
+      }
+
+      .why-us-icon i {
+        font-size: 1.5rem;
+        color: var(--white);
+      }
+
+      .why-us-card h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: var(--white);
+      }
+
+      .why-us-card p {
+        font-size: 0.9rem;
+        color: var(--gray-400);
+        line-height: 1.7;
+      }
+
+      /* ===== CLIENTS SECTION ===== */
+      .clients {
+        background: var(--white);
+      }
+
+      .clients-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+      }
+
+      .client-card {
+        background: var(--gray-50);
+        border: 1px solid var(--gray-100);
+        border-radius: var(--radius-xl);
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 120px;
+        transition: var(--transition-normal);
+      }
+
+      .client-card:hover {
+        background: var(--white);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--primary-light);
+        transform: translateY(-5px);
+      }
+
+      .client-card img {
+        max-height: 50px;
+        max-width: 120px;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: 0.7;
+        transition: var(--transition-normal);
+      }
+
+      .client-card:hover img {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+
+      /* ===== TESTIMONIALS SECTION ===== */
+      .testimonials {
+        background: var(--gray-50);
+      }
+
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .testimonial-card {
+        background: var(--white);
+        border-radius: var(--radius-xl);
+        padding: 36px;
+        border: 1px solid var(--gray-100);
+        transition: var(--transition-normal);
+      }
+
+      .testimonial-card:hover {
+        box-shadow: var(--shadow-lg);
+        border-color: transparent;
+      }
+
+      .testimonial-rating {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-rating i {
+        color: #fbbf24;
+        font-size: 0.9rem;
+      }
+
+      .testimonial-text {
+        font-size: 1rem;
+        color: var(--gray-600);
+        line-height: 1.8;
+        margin-bottom: 28px;
+        font-style: italic;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .testimonial-info h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+
+      .testimonial-info p {
+        font-size: 0.85rem;
+        color: var(--gray-500);
+      }
+
+      /* ===== CTA SECTION ===== */
+      .cta {
+        background: var(--primary-gradient);
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          rgba(255, 255, 255, 0.1) 1px,
+          transparent 0
+        );
+        background-size: 30px 30px;
+      }
+
+      .cta-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+      }
+
+      .cta-text h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--white);
+        margin-bottom: 12px;
+      }
+
+      .cta-text p {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 16px;
+        flex-shrink: 0;
+      }
+
+      /* ===== CONTACT SECTION ===== */
+      .contact {
+        background: var(--white);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        gap: 60px;
+      }
+
+      .contact-info {
+        background: var(--primary-gradient);
+        color: var(--white);
+        border-radius: var(--radius-2xl);
+        padding: 48px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-info-pattern {
+        position: absolute;
+        bottom: -80px;
+        right: -80px;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+      }
+
+      .contact-info-pattern-2 {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        width: 150px;
+        height: 150px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+      }
+
+      .contact-info > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-info h3 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        margin-bottom: 12px;
+        color: var(--white);
+      }
+
+      .contact-info > p {
+        font-size: 1rem;
+        opacity: 0.85;
+        margin-bottom: 36px;
+        line-height: 1.7;
+      }
+
+      .contact-item {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .contact-item-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .contact-item-icon i {
+        font-size: 1.1rem;
+      }
+
+      .contact-item-content h4 {
+        font-size: 0.85rem;
+        font-weight: 500;
+        opacity: 0.75;
+        margin-bottom: 4px;
+        color: var(--white);
+      }
+
+      .contact-item-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .contact-social {
+        display: flex;
+        gap: 12px;
+        margin-top: 36px;
+        padding-top: 36px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      .contact-social a {
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1rem;
+        transition: var(--transition-normal);
+      }
+
+      .contact-social a:hover {
+        background: var(--white);
+        color: var(--primary);
+        transform: translateY(-3px);
+      }
+
+      /* Contact Form */
+      .contact-form {
+        padding: 16px;
+      }
+
+      .contact-form h3 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        margin-bottom: 32px;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 24px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--gray-700);
+        margin-bottom: 8px;
+      }
+
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        width: 100%;
+        padding: 14px 18px;
+        background: var(--gray-50);
+        border: 2px solid var(--gray-100);
+        border-radius: var(--radius-lg);
+        font-size: 1rem;
+        color: var(--gray-800);
+        transition: var(--transition-normal);
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus,
+      .form-group select:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: var(--white);
+        box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.1);
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: var(--gray-400);
+      }
+
+      .form-group textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      .form-submit {
+        width: 100%;
+        padding: 16px 32px;
+        background: var(--primary-gradient);
+        color: var(--white);
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: var(--transition-normal);
+      }
+
+      .form-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(30, 64, 175, 0.35);
+      }
+
+      /* ===== MAP SECTION ===== */
+      .map {
+        height: 400px;
+        position: relative;
+      }
+
+      .map iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        background: var(--gray-900);
+        color: var(--white);
+        padding: 80px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+        gap: 60px;
+        margin-bottom: 60px;
+      }
+
+      .footer-brand p {
+        color: var(--gray-400);
+        margin: 20px 0 24px;
+        line-height: 1.8;
+      }
+
+      .footer-social {
+        display: flex;
+        gap: 10px;
+      }
+
+      .footer-social a {
+        width: 42px;
+        height: 42px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gray-400);
+        font-size: 1rem;
+        transition: var(--transition-normal);
+      }
+
+      .footer-social a:hover {
+        background: var(--primary);
+        color: var(--white);
+        transform: translateY(-3px);
+      }
+
+      .footer-column h4 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: var(--white);
+      }
+
+      .footer-links li {
+        margin-bottom: 14px;
+      }
+
+      .footer-links a {
+        color: var(--gray-400);
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: var(--transition-normal);
+      }
+
+      .footer-links a:hover {
+        color: var(--white);
+        transform: translateX(4px);
+      }
+
+      .footer-links i {
+        font-size: 0.7rem;
+        opacity: 0;
+        transition: var(--transition-normal);
+      }
+
+      .footer-links a:hover i {
+        opacity: 1;
+      }
+
+      .footer-contact-item {
+        display: flex;
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+
+      .footer-contact-item i {
+        color: var(--primary-light);
+        margin-top: 4px;
+      }
+
+      .footer-contact-item p {
+        color: var(--gray-400);
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+
+      .footer-bottom {
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .footer-bottom p {
+        color: var(--gray-500);
+        font-size: 0.9rem;
+      }
+
+      .footer-bottom a {
+        color: var(--primary-light);
+      }
+
+      .footer-legal {
+        display: flex;
+        gap: 24px;
+      }
+
+      .footer-legal a {
+        color: var(--gray-500);
+        font-size: 0.9rem;
+        transition: var(--transition-normal);
+      }
+
+      .footer-legal a:hover {
+        color: var(--white);
+      }
+
+      /* ===== BACK TO TOP ===== */
+      .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        color: var(--white);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition-normal);
+        z-index: 999;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .back-to-top:hover {
+        background: var(--primary-dark);
+        transform: translateY(-4px);
+      }
+
+      /* ===== RESPONSIVE DESIGN ===== */
+      @media (max-width: 1200px) {
+        .hero-title {
+          font-size: 3rem;
+        }
+
+        .products-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .why-us-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .clients-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 992px) {
+        .nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: var(--white);
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          transform: translateX(-100%);
+          transition: var(--transition-normal);
+        }
+
+        .nav.active {
+          transform: translateX(0);
+        }
+
+        .nav-menu {
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .nav-link {
+          font-size: 1.2rem;
+        }
+
+        .nav-cta {
+          display: inline-flex;
+        }
+
+        .menu-toggle {
+          display: flex;
+        }
+
+        .hero-container {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .hero-content {
+          padding-right: 0;
+        }
+
+        .hero-description {
+          margin: 0 auto 32px;
+        }
+
+        .hero-buttons {
+          justify-content: center;
+        }
+
+        .hero-stats {
+          justify-content: center;
+        }
+
+        .hero-visual {
+          display: none;
+        }
+
+        .hero-background,
+        .hero-pattern {
+          width: 100%;
+          clip-path: none;
+          opacity: 0.1;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 60px;
+        }
+
+        .about-content {
+          padding-left: 0;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .testimonials-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cta-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .section {
+          padding: 70px 0;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .hero {
+          padding-top: 100px;
+        }
+
+        .hero-title {
+          font-size: 2.25rem;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .hero-buttons .btn {
+          width: 100%;
+        }
+
+        .hero-stats {
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .hero-stat::after {
+          display: none;
+        }
+
+        .products-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .why-us-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-features {
+          grid-template-columns: 1fr;
+        }
+
+        .clients-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .trusted-logos {
+          gap: 30px;
+        }
+
+        .trusted-logo {
+          height: 30px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 16px;
+        }
+
+        .hero-title {
+          font-size: 1.9rem;
+        }
+
+        .section-title {
+          font-size: 1.75rem;
+        }
+
+        .contact-info {
+          padding: 32px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-logo">
+        <div class="preloader-logo-icon">
+          <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="preloader-logo-text">Future<span>Connect</span></div>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <div class="logo-text">
+            <span class="future">Future</span
+            ><span class="connect">Connect</span>
+          </div>
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <!-- In index.html navigation -->
+            <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="#clients" class="nav-link">Clients</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <a href="#contact" class="nav-cta">Get a Quote</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-background"></div>
+      <div class="hero-pattern"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" data-aos="fade-up">
+            <i class="fas fa-check-circle"></i>
+            Trusted Since 2010
+          </div>
+
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            <span>Welcome To</span>
+            <span class="highlight">FutureConnect</span>
+            <span>Security Solutions</span>
+          </h1>
+
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+            Your trusted partner in cutting-edge electronic security and
+            automation systems. We deliver innovative solutions that protect
+            what matters most to you.
+          </p>
+
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+            <a href="#products" class="btn btn-primary">
+              Explore Products
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-phone-alt"></i>
+              Contact Us
+            </a>
+          </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-count="14">0+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-count="500">0+</div>
+              <div class="hero-stat-label">Projects Done</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-count="200">0+</div>
+              <div class="hero-stat-label">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+          <div class="hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Security Systems"
+              class="hero-image"
+            />
+
+            <div class="hero-floating-card hero-floating-card-1">
+              <div class="floating-card-icon blue">
+                <i class="fas fa-video"></i>
+              </div>
+              <div class="floating-card-content">
+                <h4>CCTV Systems</h4>
+                <p>HD Surveillance</p>
+              </div>
+            </div>
+
+            <div class="hero-floating-card hero-floating-card-2">
+              <div class="floating-card-icon orange">
+                <i class="fas fa-fire-extinguisher"></i>
+              </div>
+              <div class="floating-card-content">
+                <h4>Fire Safety</h4>
+                <p>Early Detection</p>
+              </div>
+            </div>
+
+            <div class="hero-floating-card hero-floating-card-3">
+              <div class="floating-card-icon green">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <div class="floating-card-content">
+                <h4>24/7 Security</h4>
+                <p>Always Protected</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+      <div class="container">
+        <p class="trusted-by-title">Trusted by Leading Brands</p>
+        <div class="trusted-logos">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png"
+            alt="Google"
+            class="trusted-logo"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png"
+            alt="Amazon"
+            class="trusted-logo"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png"
+            alt="Microsoft"
+            class="trusted-logo"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/200px-Netflix_2015_logo.svg.png"
+            alt="Netflix"
+            class="trusted-logo"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/200px-Tesla_logo.png"
+            alt="Tesla"
+            class="trusted-logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images" data-aos="fade-right">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Our Team"
+              class="about-image-main"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              alt="Our Work"
+              class="about-image-secondary"
+            />
+            <div class="about-experience-card">
+              <div class="about-experience-number">14+</div>
+              <div class="about-experience-text">Years Experience</div>
+            </div>
+          </div>
+
+          <div class="about-content" data-aos="fade-left">
+            <div class="section-badge">
+              <i class="fas fa-building"></i>
+              About Our Company
+            </div>
+            <h2 class="section-title">
+              Leading the Future of <span>Security Technology</span>
+            </h2>
+
+            <p class="about-text">
+              Future Connect was promoted in year 2010 by a group of engineers
+              having sound experience behind them in working with leading
+              companies in the field of electronic security & Automation
+              systems.
+            </p>
+            <p class="about-text">
+              This experience has helped us to offer the perfect customized
+              solutions to the needs of our clients. We pride ourselves on
+              delivering cutting-edge technology with exceptional service and
+              support.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h4>Expert Engineers</h4>
+                  <p>Certified professionals</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h4>24/7 Support</h4>
+                  <p>Always available</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h4>Custom Solutions</h4>
+                  <p>Tailored to your needs</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h4>Quality Assured</h4>
+                  <p>Premium products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section section-gray products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-aos="fade-up">
+            <i class="fas fa-box"></i>
+            Our Products
+          </div>
+          <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            Premium <span>Security Products</span>
+          </h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Discover our comprehensive range of high-quality security and
+            automation solutions
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="product-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <!-- In the Products section of index.html, after products-grid div -->
+            <div
+              style="text-align: center; margin-top: 50px"
+              data-aos="fade-up"
+            >
+              <a href="products.html" class="btn btn-primary">
+                View All Products
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <h3>CCTV Cameras</h3>
+            <p>
+              High-definition surveillance systems with advanced features like
+              night vision, motion detection, and remote monitoring.
+            </p>
+            <a href="#" class="product-link">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-icon">
+              <i class="fas fa-fire"></i>
+            </div>
+            <h3>🔥 Fire Alarms</h3>
+            <p>
+              State-of-the-art fire detection and alarm systems with early
+              warning capabilities and automatic alerts.
+            </p>
+            <a href="#" class="product-link">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-icon">
+              <i class="fas fa-road"></i>
+            </div>
+            <h3>Boom Barriers</h3>
+            <p>
+              Automated barrier systems for controlled vehicle access in parking
+              lots, toll plazas, and secure facilities.
+            </p>
+            <a href="#" class="product-link">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="product-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <h3>Intrusion Alarms</h3>
+            <p>
+              Advanced intrusion detection systems with sensors, instant alerts,
+              and monitoring center integration.
+            </p>
+            <a href="#" class="product-link">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-aos="fade-up">
+            <i class="fas fa-concierge-bell"></i>
+            Our Services
+          </div>
+          <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            Complete <span>Security Services</span>
+          </h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            End-to-end security solutions from consultation to maintenance
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <span class="service-number">01</span>
+            <div class="service-icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Consultation & Assessment</h3>
+            <p>
+              Our security experts analyze your specific needs and design
+              customized solutions that perfectly fit your requirements and
+              budget.
+            </p>
+          </div>
+          <!-- In the Services section of index.html, after services-grid div -->
+          <div style="text-align: center; margin-top: 50px" data-aos="fade-up">
+            <a href="services.html" class="btn btn-primary">
+              View All Services
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="service-number">02</span>
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Professional Installation</h3>
+            <p>
+              Certified technicians ensure optimal system setup with minimal
+              disruption to your daily operations and maximum efficiency.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="service-number">03</span>
+            <div class="service-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3>Maintenance & Support</h3>
+            <p>
+              Regular maintenance programs and 24/7 technical support to keep
+              your security systems running at peak performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-us">
+      <div class="why-us-bg-pattern"></div>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-aos="fade-up">
+            <i class="fas fa-star"></i>
+            Why Choose Us
+          </div>
+          <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            The <span>FutureConnect</span> Advantage
+          </h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            What makes us the preferred choice for security solutions
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="why-us-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="why-us-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Industry Expertise</h3>
+            <p>
+              Over 14 years of experience in electronic security and automation
+              systems.
+            </p>
+          </div>
+
+          <div class="why-us-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-us-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certified Products</h3>
+            <p>
+              Only the highest quality, certified security products from trusted
+              brands.
+            </p>
+          </div>
+
+          <div class="why-us-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-us-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Quick Response</h3>
+            <p>
+              Fast installation and rapid response times for all service
+              requests.
+            </p>
+          </div>
+
+          <div class="why-us-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-us-icon">
+              <i class="fas fa-rupee-sign"></i>
+            </div>
+            <h3>Competitive Pricing</h3>
+            <p>
+              Best value for money with transparent pricing and no hidden costs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="section clients" id="clients">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-aos="fade-up">
+            <i class="fas fa-handshake"></i>
+            Our Clients
+          </div>
+          <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            Trusted by <span>Industry Leaders</span>
+          </h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            We are proud to serve some of the most respected organizations
+          </p>
+        </div>
+
+        <div class="clients-grid">
+          <div class="client-card" data-aos="fade-up" data-aos-delay="0">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/200px-IBM_logo.svg.png"
+              alt="IBM"
+            />
+          </div>
+          <div class="client-card" data-aos="fade-up" data-aos-delay="50">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/200px-Tata_Consultancy_Services_Logo.svg.png"
+              alt="TCS"
+            />
+          </div>
+          <div class="client-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/200px-Infosys_logo.svg.png"
+              alt="Infosys"
+            />
+          </div>
+          <div class="client-card" data-aos="fade-up" data-aos-delay="150">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/200px-Wipro_Primary_Logo_Color_RGB.svg.png"
+              alt="Wipro"
+            />
+          </div>
+          <div class="client-card" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png"
+              alt="Google"
+            />
+          </div>
+          <div class="client-card" data-aos="fade-up" data-aos-delay="250">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png"
+              alt="Microsoft"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-gray testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-aos="fade-up">
+            <i class="fas fa-quote-left"></i>
+            Testimonials
+          </div>
+          <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            What Our <span>Clients Say</span>
+          </h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Real feedback from our valued customers
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "FutureConnect provided excellent CCTV installation for our
+              corporate office. The team was professional, timely, and the
+              system works flawlessly. Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Rajesh Kumar"
+                class="testimonial-avatar"
+              />
+              <div class="testimonial-info">
+                <h4>Rajesh Kumar</h4>
+                <p>CEO, TechStart Pvt Ltd</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Their fire alarm system installation was seamless. The support
+              team is responsive and knowledgeable. We feel much safer with
+              FutureConnect's solutions in place."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Priya Sharma"
+                class="testimonial-avatar"
+              />
+              <div class="testimonial-info">
+                <h4>Priya Sharma</h4>
+                <p>Facility Manager, Horizon Mall</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "We've been using FutureConnect's security solutions for 5 years
+              now. Their quality products and excellent after-sales service make
+              them our preferred partner."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/67.jpg"
+                alt="Arun Mehta"
+                class="testimonial-avatar"
+              />
+              <div class="testimonial-info">
+                <h4>Arun Mehta</h4>
+                <p>IT Director, GlobalTech Inc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="cta-pattern"></div>
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <div class="cta-text">
+            <h2>Ready to Secure Your Future?</h2>
+            <p>
+              Contact us today for a free consultation and customized quote.
+            </p>
+          </div>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-white">
+              Get Free Quote
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="tel:08041700551" class="btn btn-outline">
+              <i class="fas fa-phone-alt"></i>
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge" data-aos="fade-up">
+            <i class="fas fa-envelope"></i>
+            Contact Us
+          </div>
+          <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            Get in <span>Touch</span>
+          </h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Have questions? We'd love to hear from you. Send us a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-info-pattern"></div>
+            <div class="contact-info-pattern-2"></div>
+
+            <h3>Contact Information</h3>
+            <p>
+              Fill up the form and our team will get back to you within 24
+              hours.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-item-content">
+                <h4>Visit Us</h4>
+                <p>
+                  400/107, 2nd floor, 38th cross,<br />26th main, 9th block,
+                  Jayanagar,<br />Bengaluru, Karnataka 560069
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-item-content">
+                <h4>Call Us</h4>
+                <p>(080) 4170 0551</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-item-content">
+                <h4>Email Us</h4>
+                <p>info@futureconnect.in</p>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form" data-aos="fade-left">
+            <h3>Send us a Message</h3>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="John"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Doe"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 98765 43210"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option value="cctv">CCTV Cameras</option>
+                  <option value="fire-alarm">Fire Alarms</option>
+                  <option value="boom-barrier">Boom Barriers</option>
+                  <option value="intrusion-alarm">Intrusion Alarms</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your requirements..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                Send Message
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5839867456!2d77.58024731482163!3d12.938028290876907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150b6f6e7c4f%3A0x5a5e9b0c2c7e3b0a!2sJayanagar%2C%20Bengaluru%2C%20Karnataka%20560069!5e0!3m2!1sen!2sin!4v1625123456789!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <div class="logo-icon">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <div class="logo-text">
+                <span class="future">Future</span
+                ><span class="connect">Connect</span>
+              </div>
+            </a>
+            <p>
+              Your trusted partner in electronic security and automation systems
+              since 2010. Delivering innovative solutions that protect what
+              matters most.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- In the footer quick links section -->
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+              </li>
+              <li>
+                <a href="aboutus.html"
+                  ><i class="fas fa-chevron-right"></i> About Us</a
+                >
+              </li>
+              <!-- ✅ Changed -->
+              <li>
+                <a href="#products"
+                  ><i class="fas fa-chevron-right"></i> Products</a
+                >
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="fas fa-chevron-right"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="#contact"
+                  ><i class="fas fa-chevron-right"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Our Products</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="products.html#surveillance"
+                  ><i class="fas fa-chevron-right"></i> CCTV Cameras</a
+                >
+              </li>
+              <li>
+                <a href="products.html#safety"
+                  ><i class="fas fa-chevron-right"></i> Fire Alarms</a
+                >
+              </li>
+              <li>
+                <a href="products.html#automation"
+                  ><i class="fas fa-chevron-right"></i> Boom Barriers</a
+                >
+              </li>
+              <li>
+                <a href="products.html#access"
+                  ><i class="fas fa-chevron-right"></i> Access Control</a
+                >
+              </li>
+              <li>
+                <a href="products.html"
+                  ><i class="fas fa-chevron-right"></i> View All</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Our Services</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="services.html#design"
+                  ><i class="fas fa-chevron-right"></i> System Design</a
+                >
+              </li>
+              <li>
+                <a href="services.html#installation"
+                  ><i class="fas fa-chevron-right"></i> Installation</a
+                >
+              </li>
+              <li>
+                <a href="services.html#training"
+                  ><i class="fas fa-chevron-right"></i> Training</a
+                >
+              </li>
+              <li>
+                <a href="services.html#support"
+                  ><i class="fas fa-chevron-right"></i> Support</a
+                >
+              </li>
+              <li>
+                <a href="services.html#amc"
+                  ><i class="fas fa-chevron-right"></i> AMC</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Contact Info</h4>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                400/107, 2nd floor, 38th cross, 26th main, 9th block, Jayanagar,
+                Bengaluru, Karnataka 560069
+              </p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <p>(080) 4170 0551</p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>info@futureconnect.in</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 <a href="#">FutureConnect</a>. All Rights Reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // ===== PRELOADER =====
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").classList.add("hidden");
+        }, 1800);
+      });
+
+      // ===== INITIALIZE AOS =====
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 80,
+      });
+
+      // ===== HEADER SCROLL EFFECT =====
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // ===== MOBILE MENU TOGGLE =====
+      const menuToggle = document.getElementById("menuToggle");
+      const nav = document.getElementById("nav");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuToggle.classList.remove("active");
+          nav.classList.remove("active");
+        });
+      });
+
+      // ===== ACTIVE NAVIGATION LINK =====
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 150;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // ===== SMOOTH SCROLLING =====
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // ===== BACK TO TOP BUTTON =====
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+          backToTop.classList.add("visible");
+        } else {
+          backToTop.classList.remove("visible");
+        }
+      });
+
+      // ===== COUNTER ANIMATION =====
+      const counters = document.querySelectorAll(".hero-stat-number");
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      };
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = parseInt(counter.getAttribute("data-count"));
+            animateCounter(counter, target);
+            counterObserver.unobserve(counter);
+          }
+        });
+      }, observerOptions);
+
+      counters.forEach((counter) => counterObserver.observe(counter));
+
+      function animateCounter(element, target) {
+        let current = 0;
+        const increment = target / 60;
+        const duration = 2000;
+        const stepTime = duration / 60;
+
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            element.textContent = target + "+";
+            clearInterval(timer);
+          } else {
+            element.textContent = Math.floor(current) + "+";
+          }
+        }, stepTime);
+      }
+
+      // ===== FORM SUBMISSION =====
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const formData = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            service: document.getElementById("service").value,
+            message: document.getElementById("message").value,
+          };
+
+          // Validate required fields
+          if (
+            !formData.firstName ||
+            !formData.lastName ||
+            !formData.email ||
+            !formData.message
+          ) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
+          // Show success message
+          alert(
+            "Thank you for your message, " +
+              formData.firstName +
+              "! We will get back to you within 24 hours.",
+          );
+
+          // Reset form
+          this.reset();
+        });
+
+      // ===== FORM INPUT ANIMATION =====
+      document
+        .querySelectorAll(
+          ".form-group input, .form-group textarea, .form-group select",
+        )
+        .forEach((input) => {
+          input.addEventListener("focus", function () {
+            this.parentElement.classList.add("focused");
+          });
+
+          input.addEventListener("blur", function () {
+            this.parentElement.classList.remove("focused");
+          });
+        });
+
+      // ===== PARALLAX EFFECT FOR HERO (subtle) =====
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        const heroBackground = document.querySelector(".hero-background");
+        if (heroBackground && scrolled < window.innerHeight) {
+          heroBackground.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+      });
+
+      // ===== TYPING EFFECT FOR BADGE (Optional) =====
+      // Can be added if needed
+
+      // ===== LAZY LOADING IMAGES =====
+      if ("IntersectionObserver" in window) {
+        const imageObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              img.classList.remove("lazy");
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+
+        document.querySelectorAll("img.lazy").forEach((img) => {
+          imageObserver.observe(img);
+        });
+      }
+
+      // ===== PRODUCT CARD HOVER EFFECT =====
+      document.querySelectorAll(".product-card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-8px)";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0)";
+        });
+      });
+
+      // ===== CONSOLE GREETING =====
+      console.log(
+        "%c FutureConnect ",
+        "background: linear-gradient(135deg, #1E40AF, #3B82F6); color: white; font-size: 20px; padding: 10px 20px; border-radius: 8px;",
+      );
+      console.log(
+        "%c Electronic Security & Automation Systems ",
+        "color: #64748B; font-size: 12px;",
+      );
+    </script>
+  </body>
+</html>
